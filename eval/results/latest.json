@@ -1,0 +1,941 @@
+{
+  "epoch_010": {
+    "epoch": 10,
+    "loss": 3.6906573526859283,
+    "tests": {
+      "tier1_object": {
+        "category": "Scene Description",
+        "tier": 1,
+        "expected": "Street scene with vehicles, buildings, people",
+        "completions": [
+          {
+            "prompt": "This image shows",
+            "completion": "a woman in her 30s, wearing glasses and holding an umbrella. She is standing",
+            "score": 3,
+            "rationale": "specific details"
+          },
+          {
+            "prompt": "In the foreground there is",
+            "completion": "a man in his 30s, wearing glasses and holding an umbrella. In the background",
+            "score": 3,
+            "rationale": "specific details"
+          },
+          {
+            "prompt": "The scene takes place",
+            "completion": "in a small, dimly lit room with an old wooden table and chairs. A woman is",
+            "score": 1,
+            "rationale": "minimal"
+          }
+        ],
+        "scores": [
+          3,
+          3,
+          1
+        ],
+        "total_score": 7,
+        "max_score": 9
+      },
+      "tier1_colors": {
+        "category": "Color Recognition",
+        "tier": 1,
+        "expected": "Multiple colors visible",
+        "completions": [
+          {
+            "prompt": "The dominant colors in this photo are",
+            "completion": "blue and green. The dominant colors in this photo are red, yellow, orange, and green. The dominant colors",
+            "score": 1,
+            "rationale": "minimal"
+          },
+          {
+            "prompt": "The most noticeable object is a",
+            "completion": "large, white house with a red roof. The second most",
+            "score": 1,
+            "rationale": "minimal"
+          }
+        ],
+        "scores": [
+          1,
+          1
+        ],
+        "total_score": 2,
+        "max_score": 6
+      },
+      "tier1_people": {
+        "category": "People Description",
+        "tier": 1,
+        "expected": "People visible doing something",
+        "completions": [
+          {
+            "prompt": "This photograph captures",
+            "completion": "the moment when a woman is standing in front of an old, dilapidated building. The background shows",
+            "score": 2,
+            "rationale": "reasonable"
+          },
+          {
+            "prompt": "The people appear to be",
+            "completion": "in a group, with one person holding up the camera. The other people",
+            "score": 2,
+            "rationale": "reasonable"
+          }
+        ],
+        "scores": [
+          2,
+          2
+        ],
+        "total_score": 4,
+        "max_score": 6
+      },
+      "tier1_daynight": {
+        "category": "Time of Day",
+        "tier": 1,
+        "expected": "Clear day/night lighting",
+        "completions": [
+          {
+            "prompt": "The lighting in this image suggests it is",
+            "completion": "a night scene. The subject is an elderly man sitting on the porch of his home, looking out at a quiet neighborhood. The background is",
+            "score": 2,
+            "rationale": "reasonable"
+          },
+          {
+            "prompt": "The atmosphere of this scene is",
+            "completion": "tense and ominous, with the camera slowly zooming in on a single figure standing alone at night. The scene is",
+            "score": 1,
+            "rationale": "minimal"
+          }
+        ],
+        "scores": [
+          2,
+          1
+        ],
+        "total_score": 3,
+        "max_score": 6
+      },
+      "tier2_ocr_large": {
+        "category": "OCR (Large Text)",
+        "tier": 2,
+        "expected": "Business sign or text visible",
+        "completions": [
+          {
+            "prompt": "The sign in this image reads",
+            "completion": ": \"A\" and the image is of a sign that says A. The person in",
+            "score": 1,
+            "rationale": "minimal"
+          },
+          {
+            "prompt": "This appears to be a",
+            "completion": "photo of a person standing in front of an empty room. The background is",
+            "score": 2,
+            "rationale": "reasonable"
+          }
+        ],
+        "scores": [
+          1,
+          2
+        ],
+        "total_score": 3,
+        "max_score": 6
+      },
+      "tier2_subject": {
+        "category": "Subject Identification",
+        "tier": 2,
+        "expected": "Living things distinguishable",
+        "completions": [
+          {
+            "prompt": "The living creatures shown here are",
+            "completion": "the ones that are most likely to be found in this area. The animals shown",
+            "score": 1,
+            "rationale": "generic"
+          },
+          {
+            "prompt": "These animals appear to be",
+            "completion": "in a group, with one of them being the main focus. The animals are",
+            "score": 1,
+            "rationale": "generic"
+          }
+        ],
+        "scores": [
+          1,
+          1
+        ],
+        "total_score": 2,
+        "max_score": 6
+      },
+      "tier2_spatial": {
+        "category": "Spatial Reasoning",
+        "tier": 2,
+        "expected": "Person holding/carrying something",
+        "completions": [
+          {
+            "prompt": "The person is holding",
+            "completion": "a small, round object that looks like an egg. The person is",
+            "score": 1,
+            "rationale": "minimal"
+          },
+          {
+            "prompt": "Behind the subject, there is",
+            "completion": "a small, white box with the number 1234567890. The box is",
+            "score": 2,
+            "rationale": "reasonable"
+          }
+        ],
+        "scores": [
+          1,
+          2
+        ],
+        "total_score": 3,
+        "max_score": 6
+      },
+      "tier2_action": {
+        "category": "Action Recognition",
+        "tier": 2,
+        "expected": "Clear action being performed",
+        "completions": [
+          {
+            "prompt": "The subject is",
+            "completion": "a man in his 60s, wearing glasses and holding an old camera. He is standing",
+            "score": 3,
+            "rationale": "specific details"
+          },
+          {
+            "prompt": "The posture suggests they are",
+            "completion": "in a hurry. The man is wearing an old-fashioned hat, and the woman has a long dress. The scene is",
+            "score": 2,
+            "rationale": "reasonable"
+          }
+        ],
+        "scores": [
+          3,
+          2
+        ],
+        "total_score": 5,
+        "max_score": 6
+      },
+      "tier3_ocr_small": {
+        "category": "Document OCR",
+        "tier": 3,
+        "expected": "Document page with text content",
+        "completions": [
+          {
+            "prompt": "This document contains",
+            "completion": "a lot of information about the 2017-2018 season, but I need to focus on the 3rd quarter of that year. What was it",
+            "score": 1,
+            "rationale": "minimal"
+          },
+          {
+            "prompt": "The text on this page reads",
+            "completion": ": \"A man is standing in front of a large, white house with an old wooden door. The man is",
+            "score": 3,
+            "rationale": "specific details"
+          }
+        ],
+        "scores": [
+          1,
+          3
+        ],
+        "total_score": 4,
+        "max_score": 6
+      },
+      "tier3_chart": {
+        "category": "Chart Reading",
+        "tier": 3,
+        "expected": "Bar chart with monthly data",
+        "completions": [
+          {
+            "prompt": "This chart displays",
+            "completion": "the number of people who have been affected by a particular disease or condition, and the number of people who have been affected by that same disease or condition in a particular year. It is used",
+            "score": 1,
+            "rationale": "minimal"
+          },
+          {
+            "prompt": "The highest value belongs to",
+            "completion": "the person who is able to see through others' masks and understand their true nature. This person is",
+            "score": 1,
+            "rationale": "minimal"
+          }
+        ],
+        "scores": [
+          1,
+          1
+        ],
+        "total_score": 2,
+        "max_score": 6
+      },
+      "tier3_finegrained": {
+        "category": "Fine-Grained Detail",
+        "tier": 3,
+        "expected": "Group with distinctive features",
+        "completions": [
+          {
+            "prompt": "The person on the left is wearing",
+            "completion": "a white shirt and black pants, while the person on the right is wearing blue jeans. The two people",
+            "score": 3,
+            "rationale": "specific details"
+          },
+          {
+            "prompt": "Notable accessories include",
+            "completion": "the famous \"Suzuki\" logo, which is a symbol of Japanese culture and the company's heritage. The logo has",
+            "score": 1,
+            "rationale": "generic"
+          }
+        ],
+        "scores": [
+          3,
+          1
+        ],
+        "total_score": 4,
+        "max_score": 6
+      },
+      "tier3_crowd": {
+        "category": "Crowd Assessment",
+        "tier": 3,
+        "expected": "Large crowd at an event",
+        "completions": [
+          {
+            "prompt": "The crowd in this image appears to be at",
+            "completion": "a large outdoor market in the city of Bangkok, Thailand. The scene is",
+            "score": 1,
+            "rationale": "generic"
+          },
+          {
+            "prompt": "The scale of this gathering is",
+            "completion": "staggering, with thousands of people gathered in the streets to celebrate. The atmosphere is",
+            "score": 1,
+            "rationale": "minimal"
+          }
+        ],
+        "scores": [
+          1,
+          1
+        ],
+        "total_score": 2,
+        "max_score": 6
+      }
+    }
+  },
+  "epoch_020": {
+    "epoch": 20,
+    "loss": 3.5087898956537247,
+    "tests": {
+      "tier1_object": {
+        "category": "Scene Description",
+        "tier": 1,
+        "expected": "Street scene with vehicles, buildings, people",
+        "completions": [
+          {
+            "prompt": "This image shows",
+            "completion": "a person standing in front of an old building with some graffiti on it. The background is",
+            "score": 2,
+            "rationale": "reasonable"
+          },
+          {
+            "prompt": "In the foreground there is",
+            "completion": "a man in his 30s with glasses and wearing jeans. In the background",
+            "score": 3,
+            "rationale": "specific details"
+          },
+          {
+            "prompt": "The scene takes place",
+            "completion": "in a small, quiet room with an old wooden table and chairs. A woman is",
+            "score": 1,
+            "rationale": "minimal"
+          }
+        ],
+        "scores": [
+          2,
+          3,
+          1
+        ],
+        "total_score": 6,
+        "max_score": 9
+      },
+      "tier1_colors": {
+        "category": "Color Recognition",
+        "tier": 1,
+        "expected": "Multiple colors visible",
+        "completions": [
+          {
+            "prompt": "The dominant colors in this photo are",
+            "completion": ": blue, green. The dominant colors in this photo are: red and yellow.\nThe image is a close-up of the face, with some details visible. The dominant colors",
+            "score": 1,
+            "rationale": "minimal"
+          },
+          {
+            "prompt": "The most noticeable object is a",
+            "completion": "large, white house with a red roof. The other objects",
+            "score": 1,
+            "rationale": "minimal"
+          }
+        ],
+        "scores": [
+          1,
+          1
+        ],
+        "total_score": 2,
+        "max_score": 6
+      },
+      "tier1_people": {
+        "category": "People Description",
+        "tier": 1,
+        "expected": "People visible doing something",
+        "completions": [
+          {
+            "prompt": "This photograph captures",
+            "completion": "the moment when a man is standing on his head, looking down at himself. The photo shows",
+            "score": 2,
+            "rationale": "reasonable"
+          },
+          {
+            "prompt": "The people appear to be",
+            "completion": "in a car. The man is sitting with his head down, looking at the ground and appears to be in a state of depression. The woman is",
+            "score": 2,
+            "rationale": "reasonable"
+          }
+        ],
+        "scores": [
+          2,
+          2
+        ],
+        "total_score": 4,
+        "max_score": 6
+      },
+      "tier1_daynight": {
+        "category": "Time of Day",
+        "tier": 1,
+        "expected": "Clear day/night lighting",
+        "completions": [
+          {
+            "prompt": "The lighting in this image suggests it is",
+            "completion": "a night scene. The subject is an elderly man sitting on the bench, looking at a book. The background is",
+            "score": 2,
+            "rationale": "reasonable"
+          },
+          {
+            "prompt": "The atmosphere of this scene is",
+            "completion": "tense and ominous, with the camera slowly zooming in on a single figure standing alone at an abandoned location. The scene is",
+            "score": 1,
+            "rationale": "minimal"
+          }
+        ],
+        "scores": [
+          2,
+          1
+        ],
+        "total_score": 3,
+        "max_score": 6
+      },
+      "tier2_ocr_large": {
+        "category": "OCR (Large Text)",
+        "tier": 2,
+        "expected": "Business sign or text visible",
+        "completions": [
+          {
+            "prompt": "The sign in this image reads",
+            "completion": ": \"A\" and is located at the corner of 10th Street, in New York City. The image is",
+            "score": 2,
+            "rationale": "reasonable"
+          },
+          {
+            "prompt": "This appears to be a",
+            "completion": "photo of a person standing in front of an object. The subject is",
+            "score": 2,
+            "rationale": "reasonable"
+          }
+        ],
+        "scores": [
+          2,
+          2
+        ],
+        "total_score": 4,
+        "max_score": 6
+      },
+      "tier2_subject": {
+        "category": "Subject Identification",
+        "tier": 2,
+        "expected": "Living things distinguishable",
+        "completions": [
+          {
+            "prompt": "The living creatures shown here are",
+            "completion": "not the same as those in other photos. The photo is",
+            "score": 1,
+            "rationale": "generic"
+          },
+          {
+            "prompt": "These animals appear to be",
+            "completion": "in a group, with one of them being the main focus. The scene is",
+            "score": 1,
+            "rationale": "generic"
+          }
+        ],
+        "scores": [
+          1,
+          1
+        ],
+        "total_score": 2,
+        "max_score": 6
+      },
+      "tier2_spatial": {
+        "category": "Spatial Reasoning",
+        "tier": 2,
+        "expected": "Person holding/carrying something",
+        "completions": [
+          {
+            "prompt": "The person is holding",
+            "completion": "a small, round object. The person is standing in front of an empty room with a large window on the right side. The object is",
+            "score": 2,
+            "rationale": "reasonable"
+          },
+          {
+            "prompt": "Behind the subject, there is",
+            "completion": "a small, white box with the number 1234567890 on it. The box is",
+            "score": 2,
+            "rationale": "reasonable"
+          }
+        ],
+        "scores": [
+          2,
+          2
+        ],
+        "total_score": 4,
+        "max_score": 6
+      },
+      "tier2_action": {
+        "category": "Action Recognition",
+        "tier": 2,
+        "expected": "Clear action being performed",
+        "completions": [
+          {
+            "prompt": "The subject is",
+            "completion": "a man in his 30s, wearing glasses and holding an umbrella. He is standing",
+            "score": 3,
+            "rationale": "specific details"
+          },
+          {
+            "prompt": "The posture suggests they are",
+            "completion": "in a hurry. The subject is wearing an orange shirt and jeans, with some sort of backpack. The subject is",
+            "score": 2,
+            "rationale": "reasonable"
+          }
+        ],
+        "scores": [
+          3,
+          2
+        ],
+        "total_score": 5,
+        "max_score": 6
+      },
+      "tier3_ocr_small": {
+        "category": "Document OCR",
+        "tier": 3,
+        "expected": "Document page with text content",
+        "completions": [
+          {
+            "prompt": "This document contains",
+            "completion": "some images of a person in the middle. The image is",
+            "score": 1,
+            "rationale": "minimal"
+          },
+          {
+            "prompt": "The text on this page reads",
+            "completion": ": \"A man is standing in front of a large, white building with red and blue signs. The man is",
+            "score": 3,
+            "rationale": "specific details"
+          }
+        ],
+        "scores": [
+          1,
+          3
+        ],
+        "total_score": 4,
+        "max_score": 6
+      },
+      "tier3_chart": {
+        "category": "Chart Reading",
+        "tier": 3,
+        "expected": "Bar chart with monthly data",
+        "completions": [
+          {
+            "prompt": "This chart displays",
+            "completion": "the number of people who have been affected by a certain disease in different countries. The chart is",
+            "score": 1,
+            "rationale": "minimal"
+          },
+          {
+            "prompt": "The highest value belongs to",
+            "completion": "the person who is most likely to be in charge of a project. The highest value",
+            "score": 1,
+            "rationale": "minimal"
+          }
+        ],
+        "scores": [
+          1,
+          1
+        ],
+        "total_score": 2,
+        "max_score": 6
+      },
+      "tier3_finegrained": {
+        "category": "Fine-Grained Detail",
+        "tier": 3,
+        "expected": "Group with distinctive features",
+        "completions": [
+          {
+            "prompt": "The person on the left is wearing",
+            "completion": "a white shirt and black pants, while the person on the right is wearing blue jeans. The two people",
+            "score": 3,
+            "rationale": "specific details"
+          },
+          {
+            "prompt": "Notable accessories include",
+            "completion": "the 1980s and early '90s era of music, which was a time when the band had been playing for years and their music became more mature. The album was",
+            "score": 2,
+            "rationale": "reasonable"
+          }
+        ],
+        "scores": [
+          3,
+          2
+        ],
+        "total_score": 5,
+        "max_score": 6
+      },
+      "tier3_crowd": {
+        "category": "Crowd Assessment",
+        "tier": 3,
+        "expected": "Large crowd at an event",
+        "completions": [
+          {
+            "prompt": "The crowd in this image appears to be at",
+            "completion": "a large outdoor market in the city of Bangkok, Thailand. The crowd is",
+            "score": 1,
+            "rationale": "generic"
+          },
+          {
+            "prompt": "The scale of this gathering is",
+            "completion": "not known. The location is unknown.\n\nThe scale of this gathering is not known.\nA: The location and the size are unknown.\n\nThe scale of this gathering is not known.\nA: The location and the size are unknown.\n\nThe gathering is not yet known.\nA:\n\nBased on the information provided",
+            "score": 1,
+            "rationale": "generic"
+          }
+        ],
+        "scores": [
+          1,
+          1
+        ],
+        "total_score": 2,
+        "max_score": 6
+      }
+    }
+  },
+  "epoch_030": {
+    "epoch": 30,
+    "loss": 3.373561312377453,
+    "tests": {
+      "tier1_object": {
+        "category": "Scene Description",
+        "tier": 1,
+        "expected": "Street scene with vehicles, buildings, people",
+        "completions": [
+          {
+            "prompt": "This image shows",
+            "completion": "a person standing in front of an old, dilapidated building with broken windows and a cracked roof. The person is",
+            "score": 2,
+            "rationale": "reasonable"
+          },
+          {
+            "prompt": "In the foreground there is",
+            "completion": "a man in his 30s, wearing glasses and holding an umbrella. In the background",
+            "score": 3,
+            "rationale": "specific details"
+          },
+          {
+            "prompt": "The scene takes place",
+            "completion": "in a small, quiet room with an old wooden table and chairs. A woman is",
+            "score": 1,
+            "rationale": "minimal"
+          }
+        ],
+        "scores": [
+          2,
+          3,
+          1
+        ],
+        "total_score": 6,
+        "max_score": 9
+      },
+      "tier1_colors": {
+        "category": "Color Recognition",
+        "tier": 1,
+        "expected": "Multiple colors visible",
+        "completions": [
+          {
+            "prompt": "The dominant colors in this photo are",
+            "completion": ": blue, green. The dominant colors in this photo are: red and yellow.\nThe image is a close-up of the face, with some details visible. The dominant colors",
+            "score": 1,
+            "rationale": "minimal"
+          },
+          {
+            "prompt": "The most noticeable object is a",
+            "completion": "large, white and black dog with a red collar. The other objects",
+            "score": 2,
+            "rationale": "reasonable"
+          }
+        ],
+        "scores": [
+          1,
+          2
+        ],
+        "total_score": 3,
+        "max_score": 6
+      },
+      "tier1_people": {
+        "category": "People Description",
+        "tier": 1,
+        "expected": "People visible doing something",
+        "completions": [
+          {
+            "prompt": "This photograph captures",
+            "completion": "the moment when a man is standing on top of an airplane, looking down at the ground. The photo shows",
+            "score": 2,
+            "rationale": "reasonable"
+          },
+          {
+            "prompt": "The people appear to be",
+            "completion": "in a car. The driver is wearing sunglasses and the passenger has long hair.\n\nThe image shows a car with two people inside. The driver is",
+            "score": 2,
+            "rationale": "reasonable"
+          }
+        ],
+        "scores": [
+          2,
+          2
+        ],
+        "total_score": 4,
+        "max_score": 6
+      },
+      "tier1_daynight": {
+        "category": "Time of Day",
+        "tier": 1,
+        "expected": "Clear day/night lighting",
+        "completions": [
+          {
+            "prompt": "The lighting in this image suggests it is",
+            "completion": "a night scene. The subject is an elderly man sitting on the bench, looking at a book. The background is",
+            "score": 2,
+            "rationale": "reasonable"
+          },
+          {
+            "prompt": "The atmosphere of this scene is",
+            "completion": "very calm and peaceful. The scene is set in a quiet, sunny park with trees that are tall and green. There is no",
+            "score": 2,
+            "rationale": "reasonable"
+          }
+        ],
+        "scores": [
+          2,
+          2
+        ],
+        "total_score": 4,
+        "max_score": 6
+      },
+      "tier2_ocr_large": {
+        "category": "OCR (Large Text)",
+        "tier": 2,
+        "expected": "Business sign or text visible",
+        "completions": [
+          {
+            "prompt": "The sign in this image reads",
+            "completion": "\"A\" and is located at the bottom of a photo. The sign says",
+            "score": 1,
+            "rationale": "minimal"
+          },
+          {
+            "prompt": "This appears to be a",
+            "completion": "photo of a person standing in front of an object. The subject is",
+            "score": 2,
+            "rationale": "reasonable"
+          }
+        ],
+        "scores": [
+          1,
+          2
+        ],
+        "total_score": 3,
+        "max_score": 6
+      },
+      "tier2_subject": {
+        "category": "Subject Identification",
+        "tier": 2,
+        "expected": "Living things distinguishable",
+        "completions": [
+          {
+            "prompt": "The living creatures shown here are",
+            "completion": "the animals that are in this photo. The animal is a dog, and it's standing on its hind legs with one paw raised. The dog is",
+            "score": 2,
+            "rationale": "reasonable"
+          },
+          {
+            "prompt": "These animals appear to be",
+            "completion": "in a group. The animals are all of the same species, and they appear to be in a group. The animals are",
+            "score": 1,
+            "rationale": "generic"
+          }
+        ],
+        "scores": [
+          2,
+          1
+        ],
+        "total_score": 3,
+        "max_score": 6
+      },
+      "tier2_spatial": {
+        "category": "Spatial Reasoning",
+        "tier": 2,
+        "expected": "Person holding/carrying something",
+        "completions": [
+          {
+            "prompt": "The person is holding",
+            "completion": "a small, round object. The person is standing on the ground with their hands in front of them, looking at something. The object is",
+            "score": 2,
+            "rationale": "reasonable"
+          },
+          {
+            "prompt": "Behind the subject, there is",
+            "completion": "a small, white object. The subject is sitting on the ground with his legs crossed and looking at a small, white object. The subject is",
+            "score": 2,
+            "rationale": "reasonable"
+          }
+        ],
+        "scores": [
+          2,
+          2
+        ],
+        "total_score": 4,
+        "max_score": 6
+      },
+      "tier2_action": {
+        "category": "Action Recognition",
+        "tier": 2,
+        "expected": "Clear action being performed",
+        "completions": [
+          {
+            "prompt": "The subject is",
+            "completion": "a man in his 30s, wearing glasses and holding an umbrella. He is standing",
+            "score": 3,
+            "rationale": "specific details"
+          },
+          {
+            "prompt": "The posture suggests they are",
+            "completion": "in a position to be seen. The subject is sitting on the ground, with one hand resting in a position to be seen. The subject is",
+            "score": 1,
+            "rationale": "minimal"
+          }
+        ],
+        "scores": [
+          3,
+          1
+        ],
+        "total_score": 4,
+        "max_score": 6
+      },
+      "tier3_ocr_small": {
+        "category": "Document OCR",
+        "tier": 3,
+        "expected": "Document page with text content",
+        "completions": [
+          {
+            "prompt": "This document contains",
+            "completion": "some images that are not available in the text. Please help to",
+            "score": 1,
+            "rationale": "generic"
+          },
+          {
+            "prompt": "The text on this page reads",
+            "completion": ": \"A man in a white shirt and blue jeans is standing on the sidewalk of an apartment building, looking at a group of people who are standing in line for something. The man is",
+            "score": 3,
+            "rationale": "specific details"
+          }
+        ],
+        "scores": [
+          1,
+          3
+        ],
+        "total_score": 4,
+        "max_score": 6
+      },
+      "tier3_chart": {
+        "category": "Chart Reading",
+        "tier": 3,
+        "expected": "Bar chart with monthly data",
+        "completions": [
+          {
+            "prompt": "This chart displays",
+            "completion": "the number of people who have been vaccinated in each country. The chart is",
+            "score": 1,
+            "rationale": "minimal"
+          },
+          {
+            "prompt": "The highest value belongs to",
+            "completion": "the person who is most likely to be in charge of a project. The highest value",
+            "score": 1,
+            "rationale": "minimal"
+          }
+        ],
+        "scores": [
+          1,
+          1
+        ],
+        "total_score": 2,
+        "max_score": 6
+      },
+      "tier3_finegrained": {
+        "category": "Fine-Grained Detail",
+        "tier": 3,
+        "expected": "Group with distinctive features",
+        "completions": [
+          {
+            "prompt": "The person on the left is wearing",
+            "completion": "a white shirt and black pants, while the person on the right is wearing blue jeans. The two people",
+            "score": 3,
+            "rationale": "specific details"
+          },
+          {
+            "prompt": "Notable accessories include",
+            "completion": "the 1980s and early '90s era of a lot of the 1257 series. The first few",
+            "score": 1,
+            "rationale": "minimal"
+          }
+        ],
+        "scores": [
+          3,
+          1
+        ],
+        "total_score": 4,
+        "max_score": 6
+      },
+      "tier3_crowd": {
+        "category": "Crowd Assessment",
+        "tier": 3,
+        "expected": "Large crowd at an event",
+        "completions": [
+          {
+            "prompt": "The crowd in this image appears to be at",
+            "completion": "a large outdoor market. The crowd is made up of people wearing various types of clothing, including men and women in casual attire. The market is",
+            "score": 2,
+            "rationale": "reasonable"
+          },
+          {
+            "prompt": "The scale of this gathering is",
+            "completion": "not known. The scale of this gathering is unknown.\n\nThe following are the details for a 2017 event:\n\nEvent Name: The Great Wall of China\nLocation: Beijing, People's Republic of China\n\nThe event took place on 10th October, 2017",
+            "score": 2,
+            "rationale": "reasonable"
+          }
+        ],
+        "scores": [
+          2,
+          2
+        ],
+        "total_score": 4,
+        "max_score": 6
+      }
+    }
+  }
+}

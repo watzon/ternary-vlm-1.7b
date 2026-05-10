@@ -1,0 +1,34 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Models (too large for git — downloaded separately)
+models/
+*.bin
+*.safetensors
+*.gguf
+
+# Old experiment files (keep only final versions)
+proj_epoch*.pt
+projector.pt
+projector_best.pt
+ternary_ste.py
+ternary_vlm_v*.py
+test_*.py
+train.py
+train_v2.py
+vlm_correct.py
+bridge.py
+
+# Misc
+eval/image_urls.json
+eval/images/street.png
+eval/images/street_src.png
+eval/images/tier1/
+eval/images/tier2/
+eval/images/tier3/
+
+# OS
+.DS_Store
+Thumbs.db
