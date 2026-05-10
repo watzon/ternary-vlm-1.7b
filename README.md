@@ -251,10 +251,10 @@ ternary-vlm-1.7b/
 ## Citation
 
 ```bibtex
-@misc{watson2025ternaryvlm,
+@misc{watson2026ternaryvlm,
     title        = {Ternary VLM: Vision-Language Alignment for 1.58-bit Language Models},
     author       = {Christopher Watson},
-    year         = {2025},
+    year         = {2026},
     howpublished = {https://github.com/watzon/ternary-vlm-1.7b},
     note         = {Research artifact demonstrating projector-based vision alignment
                     for ternary language models using CLIP ViT-L and Ternary Bonsai 1.7B}
